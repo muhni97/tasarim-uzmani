@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+:root {
+  --bg-color-green: #44a08d;
+  --bg-color-green-second: #44a08d;
+  --bg-color-white: #fff;
+  --bg-color-white-second: #fff;
+  --bg-color-dark: #0a0c16;
+  --bg-color-dark-second: #0a0c16;
+  --bg-card-effect: #44a08d;
+  --bg-card-effect-hover: #fff;
+  --bg-card-effect-text: #fff;
+  --color-green: #44a08d;
+  --color-green-second: #44a08d;
+  --color-white: #fff;
+  --color-white-second: #fff;
+  --color-white-contact: #fff;
+  --color-dark: #0a0c16;
+  --color-dark-second: #0a0c16;
+  --btn-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--bg-color-white) !important;
+  min-height: 100vh;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.f-style {
+  font-size: 1.1rem;
+}
+
+.logo:hover {
+  color: var(--bg-color-green-second) !important;
+}
+h1 {
+  font-size: 2rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 3px;
+  color: var(--color-dark);
+}
+h3 {
+  font-size: 1.5rem !important;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.1rem !important;
+  letter-spacing: 3px;
+}
+h5 {
+  font-size: 1.1rem !important;
+  color: var(--color-white-second) !important;
+  letter-spacing: 3px;
+}
+h6 {
+  color: var(--color-green);
+  font-size: 1.1rem !important;
+  letter-spacing: 2px;
+}
+small {
+  font-size: 1.1rem !important;
+  font-weight: 300;
+  color: var(--color-dark);
+  letter-spacing: 3px;
+}
+p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.btn {
+  background-color: var(--bg-color-green) !important;
+  color: var(--btn-color) !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 50px;
+  padding: 10px 20px !important;
+  border-radius: 15px;
+  border: none !important;
+  box-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  transition: all 0.6s ease-in-out !important;
+}
+.btn:hover {
+  background-color: transparent !important;
+  box-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+  color: var(--color-dark) !important;
+}
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: var(--bg-color-white-second);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.icon-box i {
+  color: var(--color-green-second);
+}
+.icon-box .bx {
+  font-size: 2.5rem;
+}
+template.dark-theme .navbar-toggler {
+  background-color: var(--color-dark) !important;
+  color: var(--color-green) !important;
+  transition: all 0.4s ease-in-out;
+}
+
+.card-effect {
+  height: 100%;
+  padding: 5px;
+  box-shadow: 33px 33px 33px #d0d0d0, -13px -13px 13px #f8f8f8;
+  border-radius: 20px;
+  background-color: var(--bg-card-effect);
+  color: var(--color-white);
+  transition: all 0.6s ease-in-out;
+}
+.card-effect:hover {
+  box-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+  background-color: var(--bg-card-effect-hover);
+
+  color: var(--color-green);
+}
+
+/*=============== SCROLL BAR ===============*/
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: hsl(171, 12%, 90%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(171, 12%, 75%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(171, 8%, 60%);
+}
